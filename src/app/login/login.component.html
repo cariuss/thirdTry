@@ -1,0 +1,43 @@
+
+  <title>log in</title>
+  <div class="div1">
+<body>
+
+  <div class="registration-form">
+   
+    <form action="#" method="post">
+      <h2>Registro</h2>
+      <label for="nombre">Nombre:</label>
+      <input placeholder="Nombre" type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input placeholder="Apellido" type="text" id="apellido" name="apellido" required>
+
+      <label for="correo">Correo:</label>
+      <input placeholder="Email" type="email" id="correo" name="correo" required>
+
+      <label for="id">ID:</label>
+      <input placeholder="cedula" type="text" id="id" name="id" required>
+
+      <label for="celular">Celular:</label>
+      <input placeholder="celular" type="tel" id="celular" name="celular" required>
+
+      <label for="rol">Rol:</label>
+      <select id="rol" name="rol" required>
+        <option value="administrador">Administrador</option>
+        <option value="trabajador">Trabajador</option>
+      </select>
+
+      <label for="direccion">Dirección:</label>
+      <textarea placeholder="direccion" id="direccion" name="direccion" rows="4" required></textarea>
+
+      <label for="contrasena">contraseña:</label>
+      <input placeholder="contrasena" type="text" id="contrasena" name="contrasena" required>
+
+      <button type="submit" (click)="registrarUsuario()">Registrarse</button>
+    </form>
+  </div>
+</body>
+</div>
+
+<div class="div2"></div>

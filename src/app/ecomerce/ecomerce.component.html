@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+ 
+</head>
+<body>
+  <header>
+    <h1>Carrito de Compras</h1>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="../../assets/cepillo.jpg" alt="Producto 1">
+      <div>
+        <h2>Cepillo</h2> 
+        <p>Precio: $19.99</p>
+        <button onclick="addToCart(1)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="../../assets/cuido.jfif" alt="Producto 2">
+      <div>
+        <h2>cuido</h2>
+        <p>Precio: $29.99</p>
+        <button onclick="addToCart(2)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Carrito de Compras</h2>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button onclick="checkout()">Realizar compra</button>
+    </div>
+  </div>
+
+  <script>
+    let cartTotal = 0;
+
+    function addToCart(productPrice) {
+      cartTotal += productPrice;
+      updateCartTotal();
+    }
+
+    function updateCartTotal() {
+      document.getElementById('cart-total').innerText = cartTotal.toFixed(2);
+    }
+
+    function checkout() {
+      alert('Compra realizada. Total: $' + cartTotal.toFixed(2));
+      cartTotal = 0;
+      updateCartTotal();
+    }
+  </script>
+</body>
+</html>
+

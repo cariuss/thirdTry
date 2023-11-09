@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: burlywood;
+  margin-top: -38px;
+}
+
+
+#banner {
+  text-align: center;
+  padding: 50px;
+}
+.img1{
+  width: 300px;
+  border-radius: 50%;
+}
+#banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#servicios,
+#equipo,
+#contacto {
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
